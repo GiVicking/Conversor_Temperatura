@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./container.css">
+  <title>Conversor|Temperatura</title>
+</head>
+<body>
+<main>
+      <section class="converter container">
+        
+        <p class="title">Conversor de Temperatura</p>
+        <label class="type" for="temperature">De:</label>
+        <section class="first-temperature">
+          <div>
+            <select class="temperature-type-from" name="temperature">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>
+          <div>
+            <input id="temperature-value-from" type="number" placeholder="00.00" required autofocus>
+          </div>
+        </section>
+        <label class="type" for="temperature-value">Para:</label>
+        <section class="second-temperature">
+          <div>
+            <select class="temperature-type-to" name="current">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+              <option value="celsius">Celsius</option>
+            </select>
+          </div>
+          <div>
+            <p id="temperature-value-to"><p>
+          </div>
+        </section>
+        <button>Converter</button>
+      </section>
+    </main>
+
+    <footer class="foot container">
+      <p>Gislaine Carvalho</p>
+    </footer>
+</body>
+  <script src="./script.js"></script>
+</html>

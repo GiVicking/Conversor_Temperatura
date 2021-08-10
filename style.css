@@ -1,0 +1,156 @@
+﻿body {
+  background-image:url("./planoFundoNeve.jpeg");
+background-size: 100%;
+margin: 0;
+}
+
+.converter {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	
+	text-align: center;
+	padding: 0 1rem 1rem 0rem;
+	width: 30rem;
+	margin-left: 15rem;
+	border: .1rem solid black;
+
+}
+
+.title {
+	
+  	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-family: 'Secular One';
+	font-size: 2.5rem;
+	padding: 0 2rem 0 2rem;
+	color: black
+	
+}
+
+.first-temperature, .second-temperature {
+  display: flex;
+}
+
+.type {
+  display: block;
+	font-family: 'Secular One';
+	font-size: 2rem;
+	color: rgb(22, 21, 21);
+	margin: 1rem 2rem 1.5rem 2rem;
+	}
+
+.temperature-type-from, .temperature-type-to {
+	font-family: 'Secular One';
+	font-size: 2rem;
+  	color: rgb(35, 35, 35);
+	width: 13rem;
+	padding: 0.75rem;
+	margin: 0rem 1rem 1rem 2.5rem;
+	border-radius: 1rem;
+	}
+
+#temperature-value-from {
+	font-family: 'Secular One';
+	font-size: 2rem;
+  	color: rgb(35, 35, 35);
+	width: 8.5rem;
+	padding: 0.75rem;
+	margin: 0rem 1rem 1rem 0;
+	border-radius: 1rem;
+	}
+
+#temperature-value-to {
+ 	 background-color: white; 
+  	font-family: 'Secular One';
+	font-size: 2rem;
+  	color: rgb(35, 35, 35);
+	width: 8.5rem;
+	padding: 0.75rem;
+	margin: 0rem 1rem 1rem 0;
+	border-radius: 1rem;}
+
+#temperature-value-from::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+button {
+	font-family: 'Secular One';
+	width: 35%;
+	color: rgb(30, 30, 30);
+	background: rgb(104, 196, 233);
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+	margin: 1rem 0 0 1rem;
+	margin-left:1rem;
+	transition: 200ms;
+	border-radius: 1rem;
+}
+
+button:hover {
+	background: rgb(68, 156, 207);
+}
+
+@media (max-width: 640px) {
+    .converter{
+		background: #2980B9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		margin-left: 5rem;
+		width: 60%;
+		height: 30rem;
+	}
+	.title{
+		padding: 1rem 0.5rem 1rem 0.5rem;
+		text-shadow: 5px 5px 10px black;
+		color:rgb(3, 44, 133);
+		font-size: 1.5rem;
+		border-radius: 5px;
+		border:2px solid #333;
+		}
+		.type {
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+			display: flex;
+			width: 14%;
+			padding: 0rem 0.2rem 0rem 0.2rem;
+			font-size: 1.5rem;
+		}
+		.temperature-type-from {
+			width: 100%;
+			font-size: 1rem;
+			}
+		.temperature-type-to{
+			width: 70%;
+			font-size:0.9rem;
+			height: 3rem;
+			padding: 0.2 0;
+		}
+		#temperature-value-from {
+			width: 25%;
+			margin-left: 4rem;
+			height: 1.3rem;
+			font-size: 1.1rem;
+			text-align: center;
+			}
+
+		#temperature-value-to {
+			padding: 1rem 0rem 0rem 0rem;
+			margin:0;
+			width: 120%;
+			border: 1.5px solid black;
+			margin-left: 1.5rem;
+			height: 1.8rem;
+			font-size: 1rem;
+			text-align: center;
+		}
+		button {
+			font-size: 1rem;
+			background-color: red;
+			
+		}
+	
+
+    }
